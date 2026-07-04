@@ -19,7 +19,6 @@ public class Asignacion implements Operacion {
 
     @Override
     public void ejecutar() throws LimiteSobreAsignacionException {
-        // 🔌 Conectamos con el nuevo nombre: obtenerVcpusDisponibles()
         Double capacidadFuturaDisponible = this.clusterObjetivo.obtenerVcpusDisponibles()
                 - this.unidadesDeComputoAAsignar;
 
